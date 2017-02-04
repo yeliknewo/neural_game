@@ -21,13 +21,13 @@ impl<T, D, F, R> GfxWindow<ng_glutin::Window, T, D, F, R>
     }
 }
 
-impl<T, D, F, R> GfxWindow<ng_sdl2::Window, T, D, F, R>
-    where R: Resources
-{
-    pub fn swap_buffers(&mut self) {
-        self.get_mut_window().gl_swap_buffers();
-    }
-}
+// impl<T, D, F, R> GfxWindow<ng_sdl2::Window, T, D, F, R>
+//     where R: Resources
+// {
+//     pub fn swap_buffers(&mut self) {
+//         self.get_mut_window().gl_swap_buffers();
+//     }
+// }
 
 impl<W, T, D, F, R> GfxWindow<W, T, D, F, R>
     where R: Resources
